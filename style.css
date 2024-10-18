@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.container{
+    background: linear-gradient(135deg, #080808b7, #4d4e4df6);
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    width: 100vw;
+}
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border-image: linear-gradient(135deg, #00feba, #5b548a) 1;
+}
+
+.search input,
+.search button {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search input:focus {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.search button:hover {
+  background: #d1f7ff;
+}
+.search button img {
+  width: 20px;
+}
+.weather-icon {
+  width: 140px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+.weather-icon:hover {
+  transform: scale(1.1);
+}
+.weather h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: -10px;
+  letter-spacing: 2px;
+}
+.weather h2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  transition: transform 0.3s ease;
+}
+.details:hover {
+  transform: translateY(-5px);
+}
+.coloum {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.coloum img {
+  width: 40px;
+  margin-right: 10px;
+}
+.humidity,
+.wind {
+  font-size: 22px;
+  margin-top: -6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px ;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+    display: none;
+}
